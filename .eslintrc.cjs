@@ -26,6 +26,15 @@ module.exports = {
       ],
       'react/react-in-jsx-scope': 'off',
       'no-unused-vars': 'off',
-      '@typescript-eslint/no-unused-vars': 'off'
+      '@typescript-eslint/no-unused-vars': 'off',
+      'import/no-named-as-default': 'off'
+   },
+   settings: {
+      'import/resolver': {
+         node: {
+            paths: ['src'],
+            extensions: ['.js', '.jsx', '.ts', '.tsx']
+         }
+      }
    }
 };
