@@ -1,0 +1,50 @@
+.yarl__container {
+   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.yarl__slide_image {
+   border-radius: 15px;
+}
+
+.yarl__button {
+   background-color: white;
+   color: black;
+   padding: 0.675rem;
+   border-radius: 50%;
+}
+
+.yarl__button:focus:not(:focus-visible) {
+   color: black;
+}
+
+@media (hover: hover) {
+   .yarl__button:focus-visible:hover,
+   .yarl__button:focus:hover,
+   .yarl__button:hover {
+      color: hsl(26, 100%, 55%);
+   }
+}
+
+.yarl__navigation_prev {
+   left: calc(50% - 310px);
+}
+
+.yarl__navigation_next {
+   right: calc(50% - 310px);
+}
+
+.yarl__toolbar {
+   top: calc(50% - 325px - 16px);
+   left: calc(50% + 250px - 16px);
+   right: auto;
+}
+
+.yarl__toolbar .yarl__button {
+   background-color: transparent;
+   color: white;
+}
+
+.yarl__toolbar .yarl__button:hover,
+.yarl__toolbar .yarl__button:focus:not(:focus-visible) {
+   color: hsl(26, 100%, 55%);
+}

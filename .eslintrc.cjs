@@ -27,7 +27,8 @@ module.exports = {
       'react/react-in-jsx-scope': 'off',
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
-      'import/no-named-as-default': 'off'
+      'import/no-named-as-default': 'off',
+      'import/no-unresolved': 'off'
    },
    settings: {
       'import/resolver': {
