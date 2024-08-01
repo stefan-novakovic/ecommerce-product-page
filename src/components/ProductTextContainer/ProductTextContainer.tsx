@@ -1,18 +1,18 @@
 import ProductButtonsWrapper from '../ProductButtonsWrapper/ProductButtonsWrapper';
 import ProductPricesWrapper from '../ProductPricesWrapper/ProductPricesWrapper';
 import { StyledProductTextContainer } from './ProductTextContainer.styled';
+import { products, ProductType } from '../../data/products';
 
 const ProductTextContainer = () => {
+   const product: ProductType | undefined = products.find((product) => product.sku === 'product-1');
+
    return (
       <StyledProductTextContainer>
          <h2>SNEAKER COMPANY</h2>
-         <h3>Fall Limited Edition Sneakers</h3>
-         <p>
-            These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they&apos;ll withstand
-            everything the weather can offer.
-         </p>
+         <h3>{product?.name}</h3>
+         <p>{product?.desc}</p>
 
-         <ProductPricesWrapper />
+         <ProductPricesWrapper price={product?.price} oldPrice={product?.oldPrice} />
          <ProductButtonsWrapper />
       </StyledProductTextContainer>
    );
