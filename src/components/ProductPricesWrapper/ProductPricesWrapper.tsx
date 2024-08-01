@@ -1,14 +1,15 @@
 import { StyledProductPricesWrapper } from './ProductPricesWrapper.styled';
+import { ProductType } from '../../data/products';
 
-const ProductPricesWrapper = () => {
+const ProductPricesWrapper = ({ price, oldPrice }: ProductType) => {
    return (
       <StyledProductPricesWrapper>
          <div>
-            <p>$125.00</p>
+            <p>{`$${price?.toFixed(2)}`}</p>
             <p>50%</p>
          </div>
 
-         <del>$250.00</del>
+         <del>{`$${oldPrice?.toFixed(2)}`}</del>
       </StyledProductPricesWrapper>
    );
 };
