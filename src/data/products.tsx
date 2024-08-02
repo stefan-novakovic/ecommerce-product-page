@@ -14,7 +14,7 @@ export const products: ProductType[] = [
       sku: 'product-1',
       thumbnail: thumbnail1,
       name: 'Fall Limited Edition Sneakers',
-      desc: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstandeverything the weather can offer.",
+      desc: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
       price: 125,
       oldPrice: 250
    }

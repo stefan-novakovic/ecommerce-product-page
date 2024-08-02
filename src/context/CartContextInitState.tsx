@@ -4,5 +4,7 @@ export const initialState = {
    totalQuantity: 0,
    setTotalQuantity: () => {},
    openCart: false,
-   setOpenCart: () => {}
+   setOpenCart: () => {},
+   openSidebarMenu: false,
+   setOpenSidebarMenu: () => {}
 };

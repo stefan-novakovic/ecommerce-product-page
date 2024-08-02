@@ -31,4 +31,8 @@ export const StyledNav = styled.nav`
          color: hsl(220, 13%, 13%);
       }
    }
+
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
 `;

@@ -7,6 +7,8 @@ type CartContextType = {
    setTotalQuantity: Dispatch<React.SetStateAction<number>>;
    openCart: boolean;
    setOpenCart: Dispatch<React.SetStateAction<boolean>>;
+   openSidebarMenu: boolean;
+   setOpenSidebarMenu: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export default CartContextType;

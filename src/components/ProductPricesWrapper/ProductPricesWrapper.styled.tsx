@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const StyledProductPricesWrapper = styled.div`
-   margin-bottom: 2.25rem;
+   margin-bottom: 1.625rem;
 
    & > div {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       gap: 1.025rem;
-      margin-bottom: 0.825rem;
+      margin-bottom: 0.675rem;
 
       & > p:first-child {
          color: hsl(220, 13%, 13%);
@@ -32,5 +32,18 @@ export const StyledProductPricesWrapper = styled.div`
    & > del {
       color: hsl(219, 9%, 45%);
       font-weight: 700;
+   }
+
+   @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.8rem;
+   }
+
+   & > del {
+      display: flex;
+      align-items: center;
+      padding-bottom: 0.685rem;
+      letter-spacing: 0.5px;
    }
 `;

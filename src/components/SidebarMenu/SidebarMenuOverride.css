@@ -1,0 +1,25 @@
+.overlay {
+   background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.menu-wrap.burger-menu .head {
+   padding: 18px 17px;
+}
+
+.menu-wrap.burger-menu .head .close {
+   float: left;
+   color: hsl(219, 9%, 45%);
+   font-size: 0;
+}
+
+.menu-wrap.burger-menu .menu {
+   padding-top: 16px;
+   font-weight: 700;
+   font-size: 1.125rem;
+   line-height: 1.225;
+   color: hsl(220, 13%, 13%);
+}
+
+.menu-wrap.burger-menu .menu .bm-item {
+   padding: 12px 24px;
+}

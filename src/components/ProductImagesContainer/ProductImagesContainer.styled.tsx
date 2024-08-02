@@ -9,4 +9,9 @@ export const StyledProductImagesContainer = styled.section`
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
+
+   @media screen and (max-width: 767px) {
+      min-height: auto;
+      max-width: 520px;
+   }
 `;

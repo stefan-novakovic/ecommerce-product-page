@@ -17,12 +17,34 @@ export const StyledProductTextContainer = styled.div`
       font-size: 2.75rem;
       letter-spacing: -0.085px;
       line-height: 1.085;
-      margin-bottom: 2.3rem;
+      margin-bottom: 2.15rem;
    }
 
    & > p {
       color: hsl(219, 9%, 45%);
       line-height: 1.625;
-      margin-bottom: 1.275rem;
+      margin-bottom: 1.45rem;
+   }
+
+   @media screen and (max-width: 767px) {
+      padding: 1.5rem 1.45rem;
+
+      & > h2 {
+         font-size: 0.725rem;
+         margin-bottom: 0.825rem;
+      }
+
+      & > h3 {
+         font-size: 1.75rem;
+         letter-spacing: 0px;
+         line-height: 1.15;
+         margin-bottom: 1rem;
+      }
+
+      & > p {
+         font-size: 0.95rem;
+         line-height: 1.65;
+         margin-bottom: 1.5rem;
+      }
    }
 `;

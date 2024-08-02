@@ -32,4 +32,12 @@ export const StyledProductQtyButtonsWrapper = styled.div`
       padding: 0.25rem;
       font-weight: 700;
    }
+
+   @media screen and (max-width: 767px) {
+      max-width: none;
+
+      & > button {
+         padding: 1.15rem 1.55rem 1.05rem;
+      }
+   }
 `;

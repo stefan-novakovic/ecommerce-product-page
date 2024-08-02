@@ -51,4 +51,13 @@ export const StyledCartAndAvatarWrapper = styled.div<{ $totalQuantity: number; $
    & > button:first-of-type:hover ~ button:last-of-type > svg path {
       fill: hsl(220, 13%, 13%);
    }
+
+   @media screen and (max-width: 1152px) {
+      gap: 1.75rem;
+   }
+
+   @media screen and (max-width: 767px) {
+      border-bottom: 6px solid transparent;
+      gap: 1.35rem;
+   }
 `;

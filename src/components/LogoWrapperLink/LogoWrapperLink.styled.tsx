@@ -7,4 +7,8 @@ export const StyledLogoWrapperLink = styled.a`
    img {
       display: block;
    }
+
+   @media screen and (max-width: 767px) {
+      border-bottom: 7px solid transparent;
+   }
 `;
