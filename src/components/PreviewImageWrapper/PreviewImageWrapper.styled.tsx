@@ -10,4 +10,8 @@ export const StyledPreviewImageWrapper = styled.div`
       height: auto;
       border-radius: 15px;
    }
+
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
 `;

@@ -7,7 +7,7 @@ export const StyledCheckoutButton = styled.button`
    background-color: hsl(26, 100%, 55%);
    color: hsl(220, 13%, 13%);
    font-weight: 700;
-   padding: 1.15rem 0 1.1rem;
+   padding: 1.2rem 0 1.05rem;
    border-radius: 10px;
    text-align: center;
    margin-right: 2rem;

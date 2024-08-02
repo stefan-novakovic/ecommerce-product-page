@@ -48,3 +48,9 @@
 .yarl__toolbar .yarl__button:focus:not(:focus-visible) {
    color: hsl(26, 100%, 55%);
 }
+
+@media screen and (max-width: 767px) {
+   .yarl__portal_open {
+      display: none;
+   }
+}

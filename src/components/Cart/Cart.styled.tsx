@@ -4,13 +4,14 @@ export const StyledCart = styled.div<{ $open: boolean }>`
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-49.2%, 14%);
+   transform: translate(-62.5%, 14%);
    min-height: 256px;
    width: 360px;
    border-radius: 10px;
    box-shadow: 0 25px 30px -10px hsla(219, 9%, 45%, 0.35);
    background-color: white;
    display: ${(props) => (props.$open ? 'block' : 'none')};
+   z-index: 1000;
 
    & > h2 {
       font-size: 1rem;
@@ -33,5 +34,23 @@ export const StyledCart = styled.div<{ $open: boolean }>`
          padding-bottom: 0.65rem;
          color: hsl(219, 9%, 45%);
       }
+   }
+
+   @media screen and (max-width: 1365px) {
+      transform: translate(-92%, 14%);
+   }
+
+   @media screen and (max-width: 418px) {
+      top: 0%;
+      left: 100%;
+      transform: translate(-95.25%, 22%);
+   }
+
+   & > h2 {
+      padding: 1.25rem 1.5rem 1.7rem;
+   }
+
+   @media screen and (max-width: 374px) {
+      width: 301px;
    }
 `;

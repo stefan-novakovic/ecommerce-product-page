@@ -6,12 +6,16 @@ export const StyledListItem = styled.li`
    align-items: center;
    gap: 0.95rem;
    height: 53px;
+   color: hsl(219, 9%, 45%);
 
    img {
       display: block;
       height: 100%;
       width: auto;
+      max-width: 58px;
+      max-height: 58px;
       border-radius: 5px;
+      padding-top: 2px;
    }
 
    & > div > p:first-of-type {
@@ -24,8 +28,18 @@ export const StyledListItem = styled.li`
 
       & > span {
          display: inline-block;
-         margin-left: 0.15rem;
+         margin-left: 0.45rem;
          font-weight: 700;
+         color: hsl(220, 13%, 13%);
+      }
+   }
+
+   @media screen and (max-width: 374px) {
+      gap: 0.85rem;
+      height: auto;
+
+      img {
+         padding-top: 0;
       }
    }
 `;

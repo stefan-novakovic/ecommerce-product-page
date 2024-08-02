@@ -17,4 +17,9 @@ export const StyledAddToCartButton = styled.button`
       background-color: #ffac6a;
       cursor: pointer;
    }
+
+   @media screen and (max-width: 767px) {
+      padding: 1.15rem 0;
+      border-radius: 12px;
+   }
 `;

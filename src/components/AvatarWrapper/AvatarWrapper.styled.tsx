@@ -18,4 +18,8 @@ export const StyledAvatarWrapper = styled.div`
       width: 100%;
       height: auto;
    }
+
+   @media screen and (max-width: 767px) {
+      max-width: 24px;
+   }
 `;

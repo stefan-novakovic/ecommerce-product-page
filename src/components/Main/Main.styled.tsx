@@ -10,5 +10,10 @@ export const StyledMain = styled.main`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 3.25rem 0;
+   }
+
+   @media screen and (max-width: 500px) {
+      padding: 0;
    }
 `;

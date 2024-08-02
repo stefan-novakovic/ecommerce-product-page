@@ -7,7 +7,9 @@ const initialState = {
    totalQuantity: 0,
    setTotalQuantity: () => {},
    openCart: false,
-   setOpenCart: () => {}
+   setOpenCart: () => {},
+   openSidebarMenu: false,
+   setOpenSidebarMenu: () => {}
 };
 
 const CartContext = createContext<CartContextType>(initialState);
@@ -20,8 +22,20 @@ export const CartProvider = ({ children }: ProviderProps) => {
    const [quantity, setQuantity] = useState<number>(0);
    const [totalQuantity, setTotalQuantity] = useState<number>(0);
    const [openCart, setOpenCart] = useState<boolean>(false);
+   const [openSidebarMenu, setOpenSidebarMenu] = useState<boolean>(false);
    return (
-      <CartContext.Provider value={{ quantity, setQuantity, totalQuantity, setTotalQuantity, openCart, setOpenCart }}>
+      <CartContext.Provider
+         value={{
+            quantity,
+            setQuantity,
+            totalQuantity,
+            setTotalQuantity,
+            openCart,
+            setOpenCart,
+            openSidebarMenu,
+            setOpenSidebarMenu
+         }}
+      >
          {children}
       </CartContext.Provider>
    );

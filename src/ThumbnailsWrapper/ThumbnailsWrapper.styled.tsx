@@ -37,4 +37,8 @@ export const StyledThumbnailsWrapper = styled.div`
          filter: opacity(0.25);
       }
    }
+
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
 `;
