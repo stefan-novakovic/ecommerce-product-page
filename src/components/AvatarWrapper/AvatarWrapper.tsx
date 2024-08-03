@@ -3,7 +3,7 @@ import avatarImg from '../../assets/images/image-avatar.png';
 
 const AvatarWrapper = () => {
    return (
-      <StyledAvatarWrapper>
+      <StyledAvatarWrapper tabIndex={0}>
          <img src={avatarImg} alt="Avatar" />
       </StyledAvatarWrapper>
    );

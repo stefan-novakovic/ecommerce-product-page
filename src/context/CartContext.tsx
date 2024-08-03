@@ -1,24 +1,10 @@
 import { createContext, ReactNode, useState } from 'react';
 import CartContextType from './CartContextType';
-
-const initialState = {
-   quantity: 0,
-   setQuantity: () => {},
-   totalQuantity: 0,
-   setTotalQuantity: () => {},
-   openCart: false,
-   setOpenCart: () => {},
-   openSidebarMenu: false,
-   setOpenSidebarMenu: () => {}
-};
+import { initialState } from './CartContextInitState';
 
 const CartContext = createContext<CartContextType>(initialState);
 
-type ProviderProps = {
-   children?: ReactNode | ReactNode[];
-};
-
-export const CartProvider = ({ children }: ProviderProps) => {
+export const CartProvider = ({ children }: { children?: ReactNode | ReactNode[] }) => {
    const [quantity, setQuantity] = useState<number>(0);
    const [totalQuantity, setTotalQuantity] = useState<number>(0);
    const [openCart, setOpenCart] = useState<boolean>(false);

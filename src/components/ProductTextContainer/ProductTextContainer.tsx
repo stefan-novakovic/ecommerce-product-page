@@ -1,7 +1,7 @@
-import ProductButtonsWrapper from '../ProductButtonsWrapper/ProductButtonsWrapper';
-import ProductPricesWrapper from '../ProductPricesWrapper/ProductPricesWrapper';
 import { StyledProductTextContainer } from './ProductTextContainer.styled';
 import { products, ProductType } from '../../data/products';
+import ProductPricesWrapper from '../ProductPricesWrapper/ProductPricesWrapper';
+import ProductButtonsWrapper from '../ProductButtonsWrapper/ProductButtonsWrapper';
 
 const ProductTextContainer = () => {
    const product: ProductType | undefined = products.find((product) => product.sku === 'product-1');

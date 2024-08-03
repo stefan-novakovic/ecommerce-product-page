@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const StyledHamburgerButton = styled.button`
+   display: none;
    flex-direction: column;
    justify-content: space-between;
+   width: 16px;
+   height: 15px;
    margin-bottom: 5px;
    background-color: transparent;
    border: none;
-   width: 16px;
-   height: 15px;
-   display: none;
 
    @media screen and (max-width: 767px) {
       display: flex;

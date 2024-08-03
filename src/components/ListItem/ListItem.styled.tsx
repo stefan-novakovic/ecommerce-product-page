@@ -8,25 +8,25 @@ export const StyledListItem = styled.li`
    height: 53px;
    color: hsl(219, 9%, 45%);
 
-   img {
+   & > img {
       display: block;
       height: 100%;
+      max-height: 58px;
       width: auto;
       max-width: 58px;
-      max-height: 58px;
-      border-radius: 5px;
       padding-top: 2px;
+      border-radius: 5px;
    }
 
-   & > div > p:first-of-type {
+   div > p:first-of-type {
       line-height: 1.75;
    }
 
-   & > div > p:last-of-type {
+   div > p:last-of-type {
       line-height: 1.5;
       letter-spacing: 0.4px;
 
-      & > span {
+      span {
          display: inline-block;
          margin-left: 0.45rem;
          font-weight: 700;

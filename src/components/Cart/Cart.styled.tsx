@@ -5,13 +5,13 @@ export const StyledCart = styled.div<{ $open: boolean }>`
    top: 50%;
    left: 50%;
    transform: translate(-62.5%, 14%);
+   display: ${(props) => (props.$open ? 'block' : 'none')};
    min-height: 256px;
    width: 360px;
    border-radius: 10px;
+   z-index: 1000;
    box-shadow: 0 25px 30px -10px hsla(219, 9%, 45%, 0.35);
    background-color: white;
-   display: ${(props) => (props.$open ? 'block' : 'none')};
-   z-index: 1000;
 
    & > h2 {
       font-size: 1rem;
@@ -51,6 +51,6 @@ export const StyledCart = styled.div<{ $open: boolean }>`
    }
 
    @media screen and (max-width: 374px) {
-      width: 301px;
+      width: 300px;
    }
 `;

@@ -1,6 +1,6 @@
 import { StyledItemList } from './ItemList.styled';
-import CheckoutButton from '../CheckoutButton/CheckoutButton';
 import ListItem from '../ListItem/ListItem';
+import CheckoutButton from '../CheckoutButton/CheckoutButton';
 
 const ItemList = () => {
    return (

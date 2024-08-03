@@ -9,7 +9,6 @@ const QtyIncrementButton = ({ quantity, setQuantity }: Props) => {
          setQuantity(0);
          return;
       }
-
       setQuantity((prev) => prev - 1);
    };
 

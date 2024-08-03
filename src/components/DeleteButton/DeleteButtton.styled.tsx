@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const StyledDeleteButton = styled.button`
    all: unset;
-   margin-left: 0.22rem;
    margin-top: 0.45rem;
+   margin-left: 0.22rem;
 
    &:hover > svg {
       cursor: pointer;
@@ -14,7 +14,7 @@ export const StyledDeleteButton = styled.button`
    }
 
    @media screen and (max-width: 374px) {
-      margin-left: 0;
       margin-top: 0;
+      margin-left: 0;
    }
 `;
