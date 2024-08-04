@@ -6,5 +6,7 @@ export const initialState = {
    openCart: false,
    setOpenCart: () => {},
    openSidebarMenu: false,
-   setOpenSidebarMenu: () => {}
+   setOpenSidebarMenu: () => {},
+   checkout: false,
+   setCheckout: () => {}
 };

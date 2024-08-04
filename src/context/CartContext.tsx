@@ -9,6 +9,7 @@ export const CartProvider = ({ children }: { children?: ReactNode | ReactNode[] 
    const [totalQuantity, setTotalQuantity] = useState<number>(0);
    const [openCart, setOpenCart] = useState<boolean>(false);
    const [openSidebarMenu, setOpenSidebarMenu] = useState<boolean>(false);
+   const [checkout, setCheckout] = useState<boolean>(false);
    return (
       <CartContext.Provider
          value={{
@@ -19,7 +20,9 @@ export const CartProvider = ({ children }: { children?: ReactNode | ReactNode[] 
             openCart,
             setOpenCart,
             openSidebarMenu,
-            setOpenSidebarMenu
+            setOpenSidebarMenu,
+            checkout,
+            setCheckout
          }}
       >
          {children}
