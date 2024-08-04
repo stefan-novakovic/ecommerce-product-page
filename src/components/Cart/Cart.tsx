@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Cart = ({ cartQtyIndicatorButtonRef, cartButtonRef }: Props) => {
-   const { totalQuantity, openCart, setOpenCart } = useCartContext();
+   const { totalQuantity, openCart, setOpenCart, checkout } = useCartContext();
    const cartRef = useRef<HTMLDivElement>(null);
 
    useEffect(() => {
@@ -33,7 +33,9 @@ const Cart = ({ cartQtyIndicatorButtonRef, cartButtonRef }: Props) => {
       <StyledCart ref={cartRef} $open={openCart}>
          <h2>Cart</h2>
 
-         <div>{totalQuantity ? <ItemList /> : <p>Your cart is empty.</p>}</div>
+         <div>
+            {checkout ? <p>Thank you for ordering.</p> : totalQuantity ? <ItemList /> : <p>Your cart is empty.</p>}
+         </div>
       </StyledCart>
    );
 };
