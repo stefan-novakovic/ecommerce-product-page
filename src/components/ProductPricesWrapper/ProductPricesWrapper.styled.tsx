@@ -10,27 +10,27 @@ export const StyledProductPricesWrapper = styled.div`
       gap: 1.025rem;
       margin-bottom: 0.675rem;
 
-      & > p:first-child {
-         color: hsl(220, 13%, 13%);
-         font-weight: 700;
+      & > h2 {
          font-size: 1.75rem;
+         font-weight: 700;
+         color: ${({ theme }) => theme.colors.veryDarkBlue};
          letter-spacing: 1px;
       }
 
-      & > p:last-child {
-         background-color: hsl(220, 13%, 13%);
-         color: white;
-         font-weight: 700;
-         font-size: 0.955rem;
-         letter-spacing: 0.05px;
-         padding: 0.31rem 0.65rem 0.19rem;
-         border-radius: 5px;
+      & > p {
          margin-top: 6px;
+         padding: 0.31rem 0.65rem 0.19rem;
+         font-size: 0.955rem;
+         font-weight: 700;
+         background-color: ${({ theme }) => theme.colors.veryDarkBlue};
+         color: ${({ theme }) => theme.colors.white};
+         border-radius: 5px;
+         letter-spacing: 0.05px;
       }
    }
 
    & > del {
-      color: hsl(219, 9%, 45%);
+      color: ${({ theme }) => theme.colors.darkGrayishBlue};
       font-weight: 700;
    }
 

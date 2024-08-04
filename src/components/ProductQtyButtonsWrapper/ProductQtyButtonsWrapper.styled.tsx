@@ -4,9 +4,9 @@ export const StyledProductQtyButtonsWrapper = styled.div`
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: hsl(223, 64%, 98%);
    width: 100%;
    max-width: 158px;
+   background-color: ${({ theme }) => theme.colors.lightGrayishBlue};
    border-radius: 8px;
 
    & > button {
@@ -17,11 +17,11 @@ export const StyledProductQtyButtonsWrapper = styled.div`
 
    & > button:hover svg path,
    & > button:focus-visible svg path {
-      fill: #ffac6a;
+      fill: ${({ theme }) => theme.colors.paleOrange};
    }
 
    & > button:active svg path {
-      fill: #ff7307;
+      fill: ${({ theme }) => theme.colors.orange};
    }
 
    & > button:first-child svg {

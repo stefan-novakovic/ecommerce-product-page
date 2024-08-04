@@ -1,5 +1,5 @@
-import useCartContext from '../../hooks/useCartContext';
 import { StyledHamburgerBar, StyledHamburgerButton } from './HamburgerButton.styled';
+import useCartContext from '../../hooks/useCartContext';
 
 const HamburgerButton = () => {
    const { setOpenSidebarMenu } = useCartContext();

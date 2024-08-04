@@ -2,19 +2,19 @@ import styled from 'styled-components';
 
 export const StyledAddToCartButton = styled.button`
    all: unset;
-   width: 100%;
-   background-color: hsl(26, 100%, 55%);
-   color: hsl(220, 13%, 13%);
-   font-weight: 700;
-   padding: 1.05rem;
-   border-radius: 8px;
    display: flex;
    justify-content: center;
    gap: 0.75rem;
+   width: 100%;
+   padding: 1.05rem;
+   font-weight: 700;
+   background-color: ${({ theme }) => theme.colors.orange};
+   color: ${({ theme }) => theme.colors.veryDarkBlue};
+   border-radius: 8px;
 
    &:hover,
    &:focus-visible {
-      background-color: #ffac6a;
+      background-color: ${({ theme }) => theme.colors.paleOrange};
       cursor: pointer;
    }
 

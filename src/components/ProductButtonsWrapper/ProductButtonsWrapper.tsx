@@ -1,6 +1,6 @@
-import AddToCartButton from '../AddToCartButton/AddToCartButton';
-import ProductQtyButtonsWrapper from '../ProductQtyButtonsWrapper/ProductQtyButtonsWrapper';
 import { StyledProductButtonsWrapper } from './ProductButtonsWrapper.styled';
+import ProductQtyButtonsWrapper from '../ProductQtyButtonsWrapper/ProductQtyButtonsWrapper';
+import AddToCartButton from '../AddToCartButton/AddToCartButton';
 
 const ProductButtonsWrapper = () => {
    return (

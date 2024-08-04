@@ -1,7 +1,7 @@
 import { Menu, Item } from 'burger-menu';
 import 'burger-menu/lib/index.css';
-import useCartContext from '../../hooks/useCartContext';
 import './SidebarMenuOverride.css';
+import useCartContext from '../../hooks/useCartContext';
 
 const SidebarMenu = () => {
    const { openSidebarMenu, setOpenSidebarMenu } = useCartContext();
@@ -13,7 +13,7 @@ const SidebarMenu = () => {
    };
 
    const handleClick = <T,>(data: DataType<T>) => {
-      window.location.href = `http://localhost:5173/${data.itemKey}`;
+      window.location.href = `/${data.itemKey}`;
    };
 
    return (
