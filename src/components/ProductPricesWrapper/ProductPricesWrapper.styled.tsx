@@ -13,7 +13,7 @@ export const StyledProductPricesWrapper = styled.div`
       & > h2 {
          font-size: 1.75rem;
          font-weight: 700;
-         color: hsl(220, 13%, 13%);
+         color: ${({ theme }) => theme.colors.veryDarkBlue};
          letter-spacing: 1px;
       }
 
@@ -22,15 +22,15 @@ export const StyledProductPricesWrapper = styled.div`
          padding: 0.31rem 0.65rem 0.19rem;
          font-size: 0.955rem;
          font-weight: 700;
-         background-color: hsl(220, 13%, 13%);
-         color: white;
+         background-color: ${({ theme }) => theme.colors.veryDarkBlue};
+         color: ${({ theme }) => theme.colors.white};
          border-radius: 5px;
          letter-spacing: 0.05px;
       }
    }
 
    & > del {
-      color: hsl(219, 9%, 45%);
+      color: ${({ theme }) => theme.colors.darkGrayishBlue};
       font-weight: 700;
    }
 

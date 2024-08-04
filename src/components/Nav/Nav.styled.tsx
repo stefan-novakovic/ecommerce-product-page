@@ -18,17 +18,17 @@ export const StyledNav = styled.nav`
             height: 107px;
             text-decoration: none;
             padding: 0 0.15rem 0.1875rem 0.005rem;
-            color: hsl(219, 9%, 45%);
+            color: ${({ theme }) => theme.colors.darkGrayishBlue};
             letter-spacing: -0.1px;
          }
       }
 
       li:hover {
-         border-bottom: 5px solid hsl(26, 100%, 55%);
+         border-bottom: 5px solid ${({ theme }) => theme.colors.orange};
       }
 
       li:hover a:any-link {
-         color: hsl(220, 13%, 13%);
+         color: ${({ theme }) => theme.colors.veryDarkBlue};
       }
    }
 

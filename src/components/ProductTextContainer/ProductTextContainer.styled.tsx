@@ -8,21 +8,21 @@ export const StyledProductTextContainer = styled.div`
    & > h2 {
       margin-bottom: 1.25rem;
       font-size: 0.8rem;
-      color: hsl(219, 9%, 45%);
+      color: ${({ theme }) => theme.colors.darkGrayishBlue};
       letter-spacing: 2.15px;
    }
 
    & > h3 {
       margin-bottom: 2.15rem;
       font-size: 2.75rem;
-      color: hsl(220, 13%, 13%);
+      color: ${({ theme }) => theme.colors.veryDarkBlue};
       line-height: 1.085;
       letter-spacing: -0.085px;
    }
 
    & > p {
       margin-bottom: 1.45rem;
-      color: hsl(219, 9%, 45%);
+      color: ${({ theme }) => theme.colors.darkGrayishBlue};
       line-height: 1.625;
    }
 

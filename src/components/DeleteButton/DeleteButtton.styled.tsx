@@ -10,7 +10,7 @@ export const StyledDeleteButton = styled.button`
    }
 
    &:hover > svg path {
-      fill: hsl(219, 9%, 45%);
+      fill: ${({ theme }) => theme.colors.darkGrayishBlue};
    }
 
    @media screen and (max-width: 374px) {

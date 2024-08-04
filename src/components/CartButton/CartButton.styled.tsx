@@ -8,7 +8,8 @@ export const StyledCartButton = styled.button<{ $openCart: boolean }>`
       display: block;
 
       path {
-         fill: ${(props) => (props.$openCart ? 'hsl(220, 13%, 13%)' : 'hsl(219, 9%, 45%)')};
+         fill: ${(props) =>
+            props.$openCart ? ({ theme }) => theme.colors.veryDarkBlue : ({ theme }) => theme.colors.darkGrayishBlue};
       }
    }
 
@@ -17,15 +18,14 @@ export const StyledCartButton = styled.button<{ $openCart: boolean }>`
    }
 
    svg:hover path {
-      fill: hsl(220, 13%, 13%);
+      fill: ${({ theme }) => theme.colors.veryDarkBlue};
    }
 
    img {
-      display: block;
       padding-top: 2px;
    }
 
    &:focus-visible > svg path {
-      fill: hsl(220, 13%, 13%);
+      fill: ${({ theme }) => theme.colors.veryDarkBlue};
    }
 `;

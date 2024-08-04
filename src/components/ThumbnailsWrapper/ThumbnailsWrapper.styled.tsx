@@ -14,7 +14,6 @@ export const StyledThumbnailsWrapper = styled.div`
       cursor: pointer;
 
       img {
-         display: block;
          width: auto;
          height: 88px;
          border-radius: 10px;
@@ -31,7 +30,7 @@ export const StyledThumbnailsWrapper = styled.div`
    }
 
    & > button.selected {
-      outline: 3px solid hsl(26, 100%, 55%);
+      outline: 3px solid ${({ theme }) => theme.colors.orange};
 
       img {
          filter: opacity(0.25);

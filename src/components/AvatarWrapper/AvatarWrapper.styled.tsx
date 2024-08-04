@@ -9,13 +9,12 @@ export const StyledAvatarWrapper = styled.div`
 
    &:hover,
    &:focus-visible {
-      outline: 2px solid hsl(26, 100%, 55%);
+      outline: 2px solid ${({ theme }) => theme.colors.orange};
       outline-offset: -2px;
       cursor: pointer;
    }
 
    img {
-      display: block;
       width: 100%;
       height: auto;
    }

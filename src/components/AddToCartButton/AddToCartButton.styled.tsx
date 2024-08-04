@@ -8,13 +8,13 @@ export const StyledAddToCartButton = styled.button`
    width: 100%;
    padding: 1.05rem;
    font-weight: 700;
-   background-color: hsl(26, 100%, 55%);
-   color: hsl(220, 13%, 13%);
+   background-color: ${({ theme }) => theme.colors.orange};
+   color: ${({ theme }) => theme.colors.veryDarkBlue};
    border-radius: 8px;
 
    &:hover,
    &:focus-visible {
-      background-color: #ffac6a;
+      background-color: ${({ theme }) => theme.colors.paleOrange};
       cursor: pointer;
    }
 

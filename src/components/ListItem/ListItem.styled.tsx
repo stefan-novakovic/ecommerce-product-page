@@ -6,10 +6,9 @@ export const StyledListItem = styled.li`
    align-items: center;
    gap: 0.95rem;
    height: 53px;
-   color: hsl(219, 9%, 45%);
+   color: ${({ theme }) => theme.colors.darkGrayishBlue};
 
    & > img {
-      display: block;
       height: 100%;
       max-height: 58px;
       width: auto;
@@ -30,7 +29,7 @@ export const StyledListItem = styled.li`
          display: inline-block;
          margin-left: 0.45rem;
          font-weight: 700;
-         color: hsl(220, 13%, 13%);
+         color: ${({ theme }) => theme.colors.veryDarkBlue};
       }
    }
 

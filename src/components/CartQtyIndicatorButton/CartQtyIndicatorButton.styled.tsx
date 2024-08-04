@@ -8,12 +8,12 @@ export const StyledCartQtyIndicatorButton = styled.button<{ $totalQuantity: numb
    display: ${(props) => (props.$totalQuantity ? 'block' : 'none')};
    padding: 1px 7px;
    font-size: 0.625rem;
-   color: white;
-   background-color: hsl(26, 100%, 55%);
+   color: ${({ theme }) => theme.colors.white};
+   background-color: ${({ theme }) => theme.colors.orange};
    border-radius: 50%;
    cursor: pointer;
 
    &:hover ~ button > svg path {
-      fill: hsl(220, 13%, 13%);
+      fill: ${({ theme }) => theme.colors.veryDarkBlue};
    }
 `;

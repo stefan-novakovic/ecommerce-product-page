@@ -10,14 +10,14 @@ export const StyledCart = styled.div<{ $open: boolean }>`
    width: 360px;
    border-radius: 10px;
    z-index: 1000;
-   box-shadow: 0 25px 30px -10px hsla(219, 9%, 45%, 0.35);
-   background-color: white;
+   box-shadow: 0 25px 30px -10px ${({ theme }) => theme.colors.cartBoxShadow};
+   background-color: ${({ theme }) => theme.colors.white};
 
    & > h2 {
       font-size: 1rem;
       font-weight: 700;
       padding: 1.5rem 1.5rem 1.7rem;
-      border-bottom: 1px solid hsla(220, 14%, 75%, 0.3);
+      border-bottom: 1px solid ${({ theme }) => theme.colors.borderBottomLightGray};
       letter-spacing: -0.15px;
    }
 
@@ -32,7 +32,7 @@ export const StyledCart = styled.div<{ $open: boolean }>`
          align-items: center;
          font-weight: 700;
          padding-bottom: 0.65rem;
-         color: hsl(219, 9%, 45%);
+         color: ${({ theme }) => theme.colors.darkGrayishBlue};
       }
    }
 

@@ -18,5 +18,5 @@ export const StyledHamburgerButton = styled.button`
 export const StyledHamburgerBar = styled.div`
    width: 100%;
    height: 3px;
-   background-color: hsl(219, 9%, 45%);
+   background-color: ${({ theme }) => theme.colors.darkGrayishBlue};
 `;
