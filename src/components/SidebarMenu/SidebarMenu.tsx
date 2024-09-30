@@ -12,7 +12,7 @@ const SidebarMenu = () => {
       domEvent: object;
    };
 
-   const handleClick = (data: DataType) => {
+   const handleClick = (_data: DataType) => {
       // window.location.href = `/${data.itemKey}`;
       window.location.href = '/';
    };
