@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledThumbnailsWrapper = styled.div`
-   display: flex;
+   display: none;
    justify-content: space-between;
    gap: 1.85rem;
    width: 100%;
@@ -37,7 +37,7 @@ export const StyledThumbnailsWrapper = styled.div`
       }
    }
 
-   @media screen and (max-width: 767px) {
-      display: none;
+   @media screen and (min-width: 768px) {
+      display: flex;
    }
 `;

@@ -5,15 +5,15 @@ export const StyledCartAndAvatarWrapper = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 2.85rem;
-   border-bottom: 7px solid transparent;
+   gap: 1.35rem;
+   border-bottom: 6px solid transparent;
 
-   @media screen and (max-width: 1152px) {
+   @media screen and (min-width: 768px) {
       gap: 1.75rem;
    }
 
-   @media screen and (max-width: 767px) {
-      border-bottom: 6px solid transparent;
-      gap: 1.35rem;
+   @media screen and (min-width: 1152px) {
+      gap: 2.85rem;
+      border-bottom: 7px solid transparent;
    }
 `;

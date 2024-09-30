@@ -23,3 +23,13 @@
 .menu-wrap.burger-menu .menu .bm-item {
    padding: 12px 24px;
 }
+
+@media screen and (min-width: 768px) {
+   .overlay {
+      display: none !important;
+   }
+
+   .menu-wrap {
+      display: none !important;
+   }
+}

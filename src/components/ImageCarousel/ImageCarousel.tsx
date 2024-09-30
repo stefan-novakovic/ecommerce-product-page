@@ -9,7 +9,7 @@ import img4 from '../../assets/images/image-product-4.jpg';
 
 const ImageCarousel = () => {
    return (
-      <StyledImageCarousel>
+      <StyledImageCarousel id="asd">
          <Carousel showThumbs={false} showIndicators={false} showStatus={false} infiniteLoop={true}>
             <img src={img1} alt="" />
             <img src={img2} alt="" />

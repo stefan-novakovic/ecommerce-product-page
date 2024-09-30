@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledProductPricesWrapper = styled.div`
-   margin-bottom: 1.625rem;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 0.8rem;
 
    & > div {
       display: flex;
@@ -30,20 +32,16 @@ export const StyledProductPricesWrapper = styled.div`
    }
 
    & > del {
-      color: ${({ theme }) => theme.colors.darkGrayishBlue};
-      font-weight: 700;
-   }
-
-   @media screen and (max-width: 767px) {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 0.8rem;
-   }
-
-   & > del {
       display: flex;
       align-items: center;
+      font-weight: 700;
+      color: ${({ theme }) => theme.colors.darkGrayishBlue};
       padding-bottom: 0.685rem;
       letter-spacing: 0.5px;
+   }
+
+   @media screen and (min-width: 768px) {
+      display: block;
+      margin-bottom: 1.625rem;
    }
 `;

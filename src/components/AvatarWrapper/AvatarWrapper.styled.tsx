@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledAvatarWrapper = styled.div`
    width: 100%;
-   max-width: 50px;
+   max-width: 24px;
    height: auto;
    aspect-ratio: 50/50;
    border-radius: 50%;
@@ -19,7 +19,7 @@ export const StyledAvatarWrapper = styled.div`
       height: auto;
    }
 
-   @media screen and (max-width: 767px) {
-      max-width: 24px;
+   @media screen and (min-width: 768px) {
+      max-width: 50px;
    }
 `;

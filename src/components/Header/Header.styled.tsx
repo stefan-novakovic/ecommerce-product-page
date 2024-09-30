@@ -5,16 +5,17 @@ export const StyledHeader = styled.header`
    justify-content: space-between;
    align-items: center;
    width: 100%;
-   min-height: 113px;
+   min-height: 68px;
+   padding-inline: 1.5rem;
    background-color: ${({ theme }) => theme.colors.white};
    border-bottom: 1px solid ${({ theme }) => theme.colors.borderBottomLightGray};
 
-   @media screen and (max-width: 1152px) {
+   @media screen and (min-width: 768px) {
       padding-inline: 0.75rem;
    }
 
-   @media screen and (max-width: 767px) {
-      min-height: 68px;
-      padding-inline: 1.5rem;
+   @media screen and (min-width: 1152px) {
+      min-height: 113px;
+      padding-inline: 0;
    }
 `;

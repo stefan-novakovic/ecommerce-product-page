@@ -6,12 +6,12 @@ export const StyledProductImagesContainer = styled.section`
    justify-content: space-between;
    align-items: center;
    width: 100%;
-   max-width: 445px;
-   min-height: 565px;
+   max-width: 520px;
+   min-height: auto;
    border-radius: 15px;
 
-   @media screen and (max-width: 767px) {
-      max-width: 520px;
-      min-height: auto;
+   @media screen and (min-width: 768px) {
+      max-width: 445px;
+      min-height: 565px;
    }
 `;

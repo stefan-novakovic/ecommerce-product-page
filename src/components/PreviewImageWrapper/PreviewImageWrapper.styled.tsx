@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledPreviewImageWrapper = styled.div`
+   display: none;
    width: 100%;
    border-radius: 15px;
    cursor: pointer;
@@ -11,7 +12,7 @@ export const StyledPreviewImageWrapper = styled.div`
       border-radius: 15px;
    }
 
-   @media screen and (max-width: 767px) {
-      display: none;
+   @media screen and (min-width: 768px) {
+      display: block;
    }
 `;

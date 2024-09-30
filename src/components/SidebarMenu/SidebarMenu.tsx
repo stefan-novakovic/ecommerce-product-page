@@ -6,13 +6,13 @@ import useCartContext from '../../hooks/useCartContext';
 const SidebarMenu = () => {
    const { openSidebarMenu, setOpenSidebarMenu } = useCartContext();
 
-   type DataType<T> = {
+   type DataType = {
       itemKey: string;
       text: string;
-      domEvent: T;
+      domEvent: object;
    };
 
-   const handleClick = <T,>(data: DataType<T>) => {
+   const handleClick = (data: DataType) => {
       window.location.href = `/${data.itemKey}`;
    };
 

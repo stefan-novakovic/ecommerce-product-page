@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledNav = styled.nav`
+   display: none;
+
    & > ul {
       display: flex;
       justify-content: flex-start;
@@ -32,7 +34,7 @@ export const StyledNav = styled.nav`
       }
    }
 
-   @media screen and (max-width: 767px) {
-      display: none;
+   @media screen and (min-width: 768px) {
+      display: flex;
    }
 `;
