@@ -8,7 +8,10 @@ const Nav = () => {
          <ul>
             {navItemsArray.map((item) => (
                <li key={item}>
-                  <a href={`/${item}`}>{item.slice(0, 1).toUpperCase().concat(item.slice(1).toLowerCase())}</a>
+                  {/* <a href={item === 'collections' ? '/' : `/${item}`}> */}
+                  <a href={item === 'collections' ? '/' : '/'}>
+                     {item.slice(0, 1).toUpperCase().concat(item.slice(1).toLowerCase())}
+                  </a>
                </li>
             ))}
          </ul>

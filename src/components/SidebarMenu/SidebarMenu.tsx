@@ -13,7 +13,8 @@ const SidebarMenu = () => {
    };
 
    const handleClick = (data: DataType) => {
-      window.location.href = `/${data.itemKey}`;
+      // window.location.href = `/${data.itemKey}`;
+      window.location.href = '/';
    };
 
    return (
